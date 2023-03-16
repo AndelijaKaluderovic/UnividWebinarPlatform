@@ -29,9 +29,7 @@
   position: relative;
   display: flex;
   align-items: center;
-
   justify-content: space-around;
-
   width: 90%;
 }
 
@@ -78,4 +76,23 @@
 
 .NotesContainerSection {
   padding: 10px;
+}
+.User{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.UserImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.Content{
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .MainRow {
+    flex-direction: column;
+  }
 }
