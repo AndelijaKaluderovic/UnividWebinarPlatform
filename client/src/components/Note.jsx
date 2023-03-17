@@ -3,12 +3,19 @@ import React from "react";
 const Note = ({ note }) => {
   console.log("note: ", note);
   return (
-    <div className="NotesContainerSection">
-      <div className="User">
-        <img className="UserImage" src={note.user.img} />
-        <div className="UserName">{note.user.name}</div>
+    <div className="NoteWrapper">
+      <div className="NoteContainer">
+        <div>
+          <img className="UserImage" src={note.user.img} />
+        </div>
+        <div className="NoteDetails">
+          <div className="NameAndTime">
+            <div className="UserName">{note.user.name}</div>
+            <div className="TimeStamp">· 12:45</div>
+          </div>
+          <div className="NoteContent">{note.content}</div>
+        </div>
       </div>
-      <div className="Content">{note.content}</div>
     </div>
   );
 };

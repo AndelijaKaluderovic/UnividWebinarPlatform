@@ -14,6 +14,11 @@ const App = () => {
     setNotes(notesJSON);
   };
 
+  const handleNewMessage = (e, message) => {
+    e.preventDefault();
+    console.log("message", message);
+  };
+
   useEffect(() => {
     fetchNotes();
   }, []);
