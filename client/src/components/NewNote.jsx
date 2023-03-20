@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
-const NewNote = ({ handleNewMessage }) => {
-  const [message, setMessage] = useState("");
-  console.log("message: ", message);
+const NewNote = ({ handleNewMessage, note, setNote }) => {
   return (
     <div className="NewNoteContainer">
-      <form className="NewNoteForm" onSubmit={() => handleNewMessage(message)}>
+      <form
+        className="NewNoteForm"
+        onSubmit={(e) => {
+          handleNewMessage(e, note);
+        }}
+      >
         <textarea
           className="NewNoteContent"
           placeholder="Write your message"
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => setNote(e.target.value)}
+          value={note}
         />
         <input className="NewNoteButton" type="submit" value="Send" />
       </form>

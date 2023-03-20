@@ -64,9 +64,8 @@
   padding-top: 10px;
   background-color: white;
   border-radius: 10px;
-  /* max-height:400px;
-  overflow: scroll; */
 }
+
 .NoteWrapper{
   border-bottom: solid 1px #ececec;
 
@@ -75,6 +74,8 @@
   display: flex;
   margin: 2px;
   padding: 5px;
+  /* max-height: 300px;
+  overflow: scroll; */
 }
 .UserImage {
   object-fit: cover;
@@ -85,7 +86,7 @@
   box-shadow: 1px 1px 5px #808080;
 }
 .NoteDetails{
-padding-left: 10px;
+padding: 0 10px;
 }
 .NameAndTime{
   display: flex;
@@ -106,9 +107,6 @@ padding-left: 10px;
   color: #555555;
   /* color: #7ECFD4; */
 }
-/* .NoteContent::placeholder{
- vertical-align: text-top;
-} */
 .NewNoteForm{
   display: flex;
   align-items: center;

@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import Notes from "./components/Notes";
 import ReactPlayer from "react-player";
 import logo from "./logo.png";
+import profilePhoto from "./assets/user.png";
 import "./App.css";
 
 const App = () => {
   const [notes, setNotes] = useState([]);
+  const [note, setNote] = useState("");
+
   const fetchNotes = async () => {
     const notesData = await fetch("http://localhost:3001/getnotes", {
       method: "get",
@@ -14,10 +17,22 @@ const App = () => {
     setNotes(notesJSON);
   };
 
-  const handleNewMessage = (e, message) => {
+  const handleNewMessage = (e, note) => {
     e.preventDefault();
-    console.log("message", message);
-  };
+    if (!note){
+      return;
+    }
+    const newNote = {
+      content: note,
+      user: {
+        name: "Angie Kaluderovic",
+        img: profilePhoto,
+      }
+    }
+    notes.push(newNote)
+    setNotes(notes);
+    setNote("");
+    };
 
   useEffect(() => {
     fetchNotes();
@@ -38,7 +53,7 @@ const App = () => {
           />
           <img src={logo} className="AppLogo" alt="logo" />
         </div>
-        <Notes notes={notes} />
+        <Notes notes={notes} handleNewMessage={handleNewMessage} note={note} setNote={setNote}/>
       </div>
     </div>
   );

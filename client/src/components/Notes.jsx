@@ -2,13 +2,17 @@ import React from "react";
 import Note from "./Note";
 import NewNote from "./NewNote";
 
-const Notes = ({ notes, handleNewMessage }) => {
+const Notes = ({ notes, handleNewMessage, note, setNote }) => {
   return (
     <div className="NotesContainer">
-      {notes.map((note, index) => (
-        <Note note={note} key={index} />
+      {notes.map((note) => (
+        <Note note={note} key={note.content} />
       ))}
-      <NewNote handleNewMessage={handleNewMessage} />
+      <NewNote
+        handleNewMessage={handleNewMessage}
+        note={note}
+        setNote={setNote}
+      />
     </div>
   );
 };
