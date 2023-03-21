@@ -34,7 +34,7 @@
   flex-grow: 1;
   resize: horizontal;
   position: relative;
-  width: 55%;
+  width: 48%;
   border-radius: 10px;
   overflow: hidden;
   background-color: black;
@@ -59,7 +59,7 @@
 
 .NotesContainer {
   flex-grow: 3;
-  width: 40%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,92 +67,6 @@
   font-size: 2vmin;
   padding-top: 10px;
   background-color: white;
-  border-radius: 10px;
-}
-.Notes{
-  height: 550px;
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
-  scroll-snap-type: y proximity;
-}
-
-.Notes > div:last-child {
-  scroll-snap-align: end;
-}
-
-.NoteWrapper{
-  border-bottom: solid 1px #ececec;
-}
-
-.NoteContainer {
-  display: flex;
-  margin: 2px;
-  padding: 5px;
-}
-
-.UserImage {
-  object-fit: cover;
-  width: 50px;
-  height: 50px;
-  border: solid 2px white;
-  border-radius: 50%;
-  box-shadow: 1px 1px 5px #808080;
-}
-
-.NoteDetails{
-padding: 0 10px;
-}
-
-.NameAndTime{
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 10px;
-}
-
-.UserName{
-  color: #A93E98;
-  padding-right: 5px;
-  font-weight: bold;
-}
-
-.TimeStamp{
-  font-size: smaller;
-  color: #808080;
-}
-
-.NoteContent{
-  text-align: left;
-  color: #555555;
-}
-
-.NewNoteForm{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 5px;
-}
-
-.NewNoteContent{
-  width: 90%;
-  height: 50px;
-  background-color: #f5f5f5a8;
-  padding: 5px;
-  margin: 5px 0;
-  border: transparent;
-  border-radius: 10px;
-  outline: none;
-  font-family: inherit;
-  font-size: inherit;
-  resize: none;
-}
-
-.NewNoteButton{
-  width: 50px;
-  height: 60px;
-  margin-left: 5px;
-  color: white;
-  background-color: #A93E98;
-  border: none;
   border-radius: 10px;
 }
 
@@ -168,16 +82,11 @@ padding: 0 10px;
     width: 90%;
     height: 300px;
     margin-right: 0;
+    margin-bottom: 10px;
   }
-
   .NotesContainer {
     flex-grow: none;
     width: 90%;
     height: 400px;
-  }
-  
-  .UserImage {
-    width: 30px;
-    height: 30px;
   }
 }

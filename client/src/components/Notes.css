@@ -1,0 +1,10 @@
+.Notes{
+  height: 550px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
+}
+  
+.Notes > div:last-child {
+  scroll-snap-align: end;
+}

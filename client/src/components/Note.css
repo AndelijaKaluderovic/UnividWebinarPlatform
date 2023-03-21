@@ -1,0 +1,51 @@
+.NoteWrapper{
+    border-bottom: solid 1px #ececec;
+  }
+  
+  .NoteContainer {
+    display: flex;
+    margin: 2px;
+    padding: 5px;
+  }
+  
+  .UserImage {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border: solid 2px white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #808080;
+  }
+  
+  .NoteDetails{
+  padding: 0 10px;
+  }
+  
+  .NameAndTime{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  
+  .UserName{
+    color: #A93E98;
+    padding-right: 5px;
+    font-weight: bold;
+  }
+  
+  .TimeStamp{
+    font-size: smaller;
+    color: #808080;
+  }
+  
+  .NoteContent{
+    text-align: left;
+    color: #555555;
+  }
+
+  @media screen and (max-width: 767px) {
+    .UserImage {
+      width: 30px;
+      height: 30px;
+    }
+  }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./NewNote.css";
 
 const NewNote = ({ handleNewMessage, note, setNote }) => {
   return (
