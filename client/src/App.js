@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Notes from "./components/Notes";
+import NewNote from "./components/NewNote";
 import ReactPlayer from "react-player";
 import logo from "./logo.png";
 import profilePhoto from "./assets/user.png";
@@ -37,6 +38,7 @@ const App = () => {
   useEffect(() => {
     fetchNotes();
   }, []);
+
   return (
     <div className="App">
       <div className="MainRow">
@@ -53,7 +55,14 @@ const App = () => {
           />
           <img src={logo} className="AppLogo" alt="logo" />
         </div>
+        <div className="NotesContainer">
         <Notes notes={notes} handleNewMessage={handleNewMessage} note={note} setNote={setNote}/>
+        <NewNote
+        handleNewMessage={handleNewMessage}
+        note={note}
+        setNote={setNote}
+      />
+        </div>
       </div>
     </div>
   );
