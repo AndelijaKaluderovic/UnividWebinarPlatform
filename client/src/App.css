@@ -82,15 +82,14 @@
 
 .NoteWrapper{
   border-bottom: solid 1px #ececec;
-
 }
+
 .NoteContainer {
   display: flex;
   margin: 2px;
   padding: 5px;
-  /* max-height: 300px;
-  overflow: scroll; */
 }
+
 .UserImage {
   object-fit: cover;
   width: 50px;
@@ -99,34 +98,40 @@
   border-radius: 50%;
   box-shadow: 1px 1px 5px #808080;
 }
+
 .NoteDetails{
 padding: 0 10px;
 }
+
 .NameAndTime{
   display: flex;
   align-items: baseline;
   margin-bottom: 10px;
 }
+
 .UserName{
   color: #A93E98;
   padding-right: 5px;
   font-weight: bold;
 }
+
 .TimeStamp{
   font-size: smaller;
   color: #808080;
 }
+
 .NoteContent{
   text-align: left;
   color: #555555;
-  /* color: #7ECFD4; */
 }
+
 .NewNoteForm{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 5px;
 }
+
 .NewNoteContent{
   width: 90%;
   height: 50px;
@@ -140,6 +145,7 @@ padding: 0 10px;
   font-size: inherit;
   resize: none;
 }
+
 .NewNoteButton{
   width: 50px;
   height: 60px;
@@ -153,5 +159,25 @@ padding: 0 10px;
 @media screen and (max-width: 767px) {
   .MainRow {
     flex-direction: column;
+  }
+
+  .VideoContainer {
+    flex-grow: none;
+    resize: horizontal;
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin-right: 0;
+  }
+
+  .NotesContainer {
+    flex-grow: none;
+    width: 90%;
+    height: 400px;
+  }
+  
+  .UserImage {
+    width: 30px;
+    height: 30px;
   }
 }
