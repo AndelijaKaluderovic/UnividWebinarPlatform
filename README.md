@@ -1,6 +1,8 @@
 # Univid Webinar Platform
 
-The Wbinar Platform project is created with React (the FE side) and Express (the BE side), and it represents a minimal working webinar platform (MVP), which was given by Univid AB as test assignment. For this project, data has been fetched from BE, while the solution is styled via CSS, and is set as responsive for various device/screen sizes.
+https://user-images.githubusercontent.com/80541469/226621802-dbc190bc-38b9-4fcd-bcc1-a244d361bd1e.mp4
+
+The Webinar Platform project is created with React (the FE side) and Express (the BE side), and it represents a minimal working webinar platform (MVP), which was given by Univid AB as test assignment. For this project, data has been fetched from BE, while the solution is styled via CSS, and is set as responsive for various device/screen sizes.
 
 ## Assignment Criteria
 
